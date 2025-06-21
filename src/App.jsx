@@ -1,11 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
 import AppRoutes from "./routes/AppRoutes";
+// Removed useLoader and Loader imports as Layout.jsx handles its own loader
 
 function App() {
+  // const { loading } = useLoader(); // No longer needed here
+
   return (
-     <AppRoutes/>
+    <>
+      {/* {loading && <Loader />} */} {/* Loader rendering removed, handled by Layout.jsx */}
+      <AppRoutes />
+    </>
   );
 }
 

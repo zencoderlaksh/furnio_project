@@ -16,8 +16,8 @@ const Description = () => {
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit distinctio asperiores expedita repellat sunt veniam quaerat eveniet! Omnis tenetur architecto provident dicta nesciunt quo perspiciatis saepe repellat, corporis rem! Neque itaque ipsum, atque dolorum quas consequuntur, perspiciatis dolorem quisquam quaerat corrupti eum veniam ratione officia cupiditate alias autem fuga cumque vero. Possimus qui, corrupti eligendi inventore earum cupiditate nam quis reiciendis voluptas exercitationem sapiente ipsum autem quos, voluptatibus a enim officia aliquam dolorem libero esse nesciunt aspernatur dolorum! Necessitatibus saepe, quo amet perspiciatis doloremque debitis dignissimos distinctio labore error architecto voluptas assumenda dolorem laboriosam officiis explicabo perferendis, ducimus quos rem.</p>
       </div>
       <div className="flex flex-col lg:flex-row gap-2 p-4 pt-0">
-        <img src="src/assets/a.png" className='cursor-pointer hover:opacity-80 transition duration-300'/>
-        <img src="src/assets/b.png" className='cursor-pointer hover:opacity-80 transition duration-300'/>
+        <img src="/Furnio---The-Furniture-Expert/assets/a.png" className='cursor-pointer hover:opacity-80 transition duration-300'/>
+        <img src="/Furnio---The-Furniture-Expert/assets/b.png" className='cursor-pointer hover:opacity-80 transition duration-300'/>
       </div>
       <div className=" h-[1px] bg-gray-300 mb-9 w-screen"></div>
 

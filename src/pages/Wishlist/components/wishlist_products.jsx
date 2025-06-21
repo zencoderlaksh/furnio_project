@@ -20,7 +20,7 @@ const Wishlist_products = () => {
             <ul className="flex flex-col md:flex-row mb-0 p-4 w-full justify-center items-center gap-4 md:gap-0">
               <li className="text-center flex-1">
                 <img
-                  src="src/assets/image8.png"
+                  src="/Furnio---The-Furniture-Expert/assets/image8.png"
                   className="h-[150px] rounded-[8px] cursor-pointer hover:opacity-80 transition duration-300 mx-auto"
                   alt="Product"
                 />
@@ -34,7 +34,7 @@ const Wishlist_products = () => {
               </li>
               <li className="text-center flex-1">
                 <img
-                  src="src/assets/del-button.png"
+                  src="/Furnio---The-Furniture-Expert/assets/del-button.png"
                   className="cursor-pointer hover:opacity-80 transition duration-300 mx-auto"
                   alt="Remove"
                 />

@@ -1,12 +1,26 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { motion } from "framer-motion";
 
 function CardComponent({ img, title, description, price, oldPrice }) {
   return (
-    <div className="relative group w-full max-w-xs mx-auto sm:max-w-sm md:max-w-[17rem] lg:max-w-[18rem] xl:max-w-[19rem]">
+    <motion.div
+      className="relative group w-full max-w-xs mx-auto sm:max-w-sm md:max-w-[17rem] lg:max-w-[18rem] xl:max-w-[19rem]"
+      whileHover={{ scale: 1.03 }}
+      transition={{ type: "spring", stiffness: 300, damping: 15 }}
+    >
       {/* Card Content */}
       <Card className="transition duration-300 group-hover:opacity-80 h-full">
-        <Card.Img variant="top" src={img} className="object-cover" />
+        <Card.Img
+          variant="top"
+          src={img}
+          className="object-cover h-[200px] sm:h-[250px]" // Added fixed height for consistency before load/error
+          onError={(e) => {
+            e.target.onerror = null; // Prevents infinite loop if placeholder also fails
+            e.target.src = `https://via.placeholder.com/400x400.png?text=${title.replace(/\s/g, '+')}`;
+            e.target.style.objectFit = 'contain'; // Ensure placeholder text is visible
+          }}
+        />
         <div className="cardbody bg-gray-100">
           <Card.Body>
             <Card.Title className="text-lg font-semibold">{title}</Card.Title>
@@ -29,7 +43,7 @@ function CardComponent({ img, title, description, price, oldPrice }) {
           Add to Cart
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

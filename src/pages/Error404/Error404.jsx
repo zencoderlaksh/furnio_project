@@ -7,7 +7,7 @@ const Error404 = () => {
     <div className="w-screen h-screen bg-[#faf3ea] flex flex-col justify-center items-center text-center p-4 overflow-hidden">
       {/* Logo bounce in */}
       <motion.img
-        src="src/assets/Furnio-logo.png"
+        src="/Furnio---The-Furniture-Expert/assets/Furnio-logo.png"
         alt="Furnio Logo"
         className="h-[60px] w-[60px] mb-4"
         initial={{ y: -50, opacity: 0 }}
@@ -59,7 +59,7 @@ const Error404 = () => {
 
       {/* Floating image fade in */}
       <motion.img
-        src="src/assets/image8.png"
+        src="/Furnio---The-Furniture-Expert/assets/image8.png"
         alt="Decorative Furniture"
         className="h-[200px] mt-10 opacity-80 rounded-xl"
         initial={{ opacity: 0, y: 30 }}

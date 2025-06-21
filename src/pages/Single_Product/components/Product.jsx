@@ -6,21 +6,21 @@ const product = () => {
       <div className="flex flex-col md:flex-row ">
         <div className="left-panel flex flex-col lg:flex-row  justify-center gap-4 p-4">
           <div className="main-picture bg-[#faf3ea] h-fit rounded">
-            <img src="src/assets/Asgaardsofa3.png" className='cursor-pointer lg:h-[450px] lg:w-[900px] md:h-[300px] md:w-[1100px]'/>
+            <img src="/Furnio---The-Furniture-Expert/assets/Asgaardsofa3.png" className='cursor-pointer lg:h-[450px] lg:w-[900px] md:h-[300px] md:w-[1100px]'/>
           </div>
           <div className="other-pictures flex md:flex-col gap-2">
             
-            <div className="w-fit hover:bg-[#F9F1E7] transition-colors duration-300 rounded"><img src="src/assets/small1.png" alt="" className='cursor-pointer md:h-[90px] md:w-[100px] lg:w-[180px]'/></div>
-            <div className="w-fit hover:bg-[#F9F1E7] transition-colors duration-300 rounded"><img src="src/assets/small2.png" alt="" className='cursor-pointer md:h-[90px] md:w-[100px] lg:w-[180px]'/></div>
-            <div className="w-fit hover:bg-[#F9F1E7] transition-colors duration-300 rounded"><img src="src/assets/small3.png" alt="" className='cursor-pointer md:h-[90px] md:w-[100px] lg:w-[180px]'/></div>
-            <div className="w-fit hover:bg-[#F9F1E7] transition-colors duration-300 rounded"><img src="src/assets/small1.png" alt="" className='cursor-pointer md:h-[90px] md:w-[100px]  lg:w-[180px]'/></div>
+            <div className="w-fit hover:bg-[#F9F1E7] transition-colors duration-300 rounded"><img src="/Furnio---The-Furniture-Expert/assets/small1.png" alt="" className='cursor-pointer md:h-[90px] md:w-[100px] lg:w-[180px]'/></div>
+            <div className="w-fit hover:bg-[#F9F1E7] transition-colors duration-300 rounded"><img src="/Furnio---The-Furniture-Expert/assets/small2.png" alt="" className='cursor-pointer md:h-[90px] md:w-[100px] lg:w-[180px]'/></div>
+            <div className="w-fit hover:bg-[#F9F1E7] transition-colors duration-300 rounded"><img src="/Furnio---The-Furniture-Expert/assets/small3.png" alt="" className='cursor-pointer md:h-[90px] md:w-[100px] lg:w-[180px]'/></div>
+            <div className="w-fit hover:bg-[#F9F1E7] transition-colors duration-300 rounded"><img src="/Furnio---The-Furniture-Expert/assets/small1.png" alt="" className='cursor-pointer md:h-[90px] md:w-[100px]  lg:w-[180px]'/></div>
           </div>
         </div>
         <div className="right-panel flex flex-col gap-3 p-3">
           <h1 className='mb-0'>Asgaard Sofa</h1>
           <p className='text-gray-500 text-2xl mb-0'>Rs. 250,000.00</p>
           <div className="star-rating flex text-center items-center gap-3">
-            <img src="src/assets/star.png"/>
+            <img src="/Furnio---The-Furniture-Expert/assets/star.png"/>
             <div className="bg-gray-500 w-[1px] h-9"></div>
             <p className='text-gray-500 mb-0'>5 Customer Reviews</p>
           </div>
@@ -70,9 +70,9 @@ const product = () => {
               <li className=' text-gray-500'>Sofas</li>
               <li className=' text-gray-500'>Sofa, Chair, Home, Shop</li>
               <li className=' text-gray-500 flex items-center gap-3'>
-                <img src="src/assets/fb-logo.png" className='cursor-pointer' />
-                <img src="src/assets/linkedin.png" className='cursor-pointer' alt="" />
-                <img src="src/assets/twitter.png" className='cursor-pointer' alt="" />
+                <img src="/Furnio---The-Furniture-Expert/assets/fb-logo.png" className='cursor-pointer' />
+                <img src="/Furnio---The-Furniture-Expert/assets/linkedin.png" className='cursor-pointer' alt="" />
+                <img src="/Furnio---The-Furniture-Expert/assets/twitter.png" className='cursor-pointer' alt="" />
               </li>
             </ul>
 

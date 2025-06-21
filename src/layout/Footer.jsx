@@ -16,10 +16,10 @@ function Footer() {
           </p>
         </div>
 
-        {/* 🆕 Wrapper for Links & Help side-by-side on mobile */}
-        <div className="flex flex-row justify-center gap-8 mb-4 lg:mb-0 lg:flex-col lg:mr-16 xl:mr-24">
+        {/* Wrapper for Links & Help */}
+        <div className="flex flex-col sm:flex-row justify-center sm:justify-start text-center sm:text-left gap-8 sm:gap-12 md:gap-16 mb-6 lg:mb-0 lg:mr-8 xl:mr-16"> {/* Adjusted gaps and margins */}
           {/* Links */}
-          <div className="secondpart text-center lg:text-left">
+          <div className="secondpart"> {/* Removed text-center lg:text-left as parent handles it */}
             <ul>
               <li className="mb-1 sm:mb-4 font-semibold text-gray-400 text-xs sm:text-sm">Links</li>
               <li className="mb-1 sm:mb-2 font-semibold"><a href="/" className="text-black">Home</a></li>
@@ -64,7 +64,7 @@ function Footer() {
       <div className="w-full sm:w-[80%] mx-auto text-center">
         <hr className="my-4 sm:my-6 border-t-2 border-gray-300" />
         <div className="copyright mb-6 sm:mb-10 mt-2 text-gray-400 text-xs sm:text-sm">
-          <h6>© 2025 | A collaborative creation by Piyush Soni & Praver Jain</h6>
+          <p>© 2025 | A collaborative creation by Piyush Soni & Praver Jain</p>
         </div>
       </div>
     </div>

@@ -37,16 +37,4 @@
 }
 
 
-.nav-hover:hover {
-  color: #B88E2F;
-  transition: color 0.3s ease;
-}
-
-.nav-icon-hover:hover {
-  color: #B88E2F;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-
 

@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import Rectangle24 from "../../../assets/Rectangle24.png";
-import Rectangle25 from "../../../assets/Rectangle25.png";
-import Rectangle45 from "../../../assets/Rectangle45.png";
+import Rectangle24 from "../../../assets/Rectangle24.png"; // Stays as import
+import Rectangle25 from "../../../assets/Rectangle25.png"; // Stays as import
+// Rectangle45 removed from imports, will use public path
 import { ChevronRight } from "lucide-react";
 
-const images = [Rectangle24, Rectangle25, Rectangle45];
+const images = [
+  Rectangle24,
+  Rectangle25,
+  "/Furnio---The-Furniture-Expert/assets/Rectangle45.png" // Use public path string
+];
 
 function InspirationSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);

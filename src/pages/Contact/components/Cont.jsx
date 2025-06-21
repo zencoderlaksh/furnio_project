@@ -12,21 +12,21 @@ const Cont = () => {
         <div className="left-panel flex flex-col bg-[#faf3ea] rounded p-3">
           <div className="flex flex-col">
             <div className="flex gap-2 ">
-              <img src="src/assets/Vector.png"/>
+              <img src="/Furnio---The-Furniture-Expert/assets/Vector.png"/>
               <h5 className='mb-0'>Address</h5>
               </div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, dolor?</p>
           </div>
           <div className="flex flex-col">
             <div className="flex gap-2 ">
-              <img src="src/assets/bxs_phone.png"/>
+              <img src="/Furnio---The-Furniture-Expert/assets/bxs_phone.png"/>
               <h5 className='mb-0'>Phone</h5>
               </div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, dolor?</p>
           </div>
           <div className="flex flex-col mb-0">
             <div className="flex gap-2">
-              <img src="src/assets/bi_clock-fill.png"/>
+              <img src="/Furnio---The-Furniture-Expert/assets/bi_clock-fill.png"/>
               <h5 className='mb-0'>Working Time</h5>
               </div>
             <p className='mb-0'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, dolor?</p>

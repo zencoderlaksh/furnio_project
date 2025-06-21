@@ -9,23 +9,23 @@ const Products = () => {
       </div>
       <div className="Products flex flex-col md:flex-row gap-2">
         <div className="card flex flex-col justify-center cursor-pointer hover:scale-105 hover:opacity-80 transition duration-300 ease-in-out p-2">
-          <img src="src/assets/Asgaardsofa3.png" className='md:h-[200px]'/>
+          <img src="/Furnio---The-Furniture-Expert/assets/Asgaardsofa3.png" className='md:h-[200px]'/>
           <h4>Asgaard Sofa</h4>
           <h6>Rs.250,000.00</h6>
           <div className="star-rating flex items-center gap-2">
             <p className='text-center mb-0 font-bold'>4.7</p>
-            <img src="src/assets/star.png"/>
+            <img src="/Furnio---The-Furniture-Expert/assets/star.png"/>
             <div className="bg-gray-500 w-[1px] h-9"></div>
             <p className='text-gray-500 mb-0'>204 Reviews</p>
           </div>
         </div>
         <div className="card flex flex-col justify-center cursor-pointer hover:scale-105 hover:opacity-80 transition duration-300 ease-in-out p-2">
-          <img src="src/assets/Asgaardsofa3.png" className='md:h-[200px]'/>
+          <img src="/Furnio---The-Furniture-Expert/assets/Asgaardsofa3.png" className='md:h-[200px]'/>
           <h4>Asgaard Sofa</h4>
           <h6>Rs.250,000.00</h6>
           <div className="star-rating flex items-center gap-2">
             <p className='text-center mb-0 font-bold'>4.7</p>
-            <img src="src/assets/star.png"/>
+            <img src="/Furnio---The-Furniture-Expert/assets/star.png"/>
             <div className="bg-gray-500 w-[1px] h-9"></div>
             <p className='text-gray-500 mb-0'>204 Reviews</p>
           </div>
@@ -35,7 +35,7 @@ const Products = () => {
           <h3>Add a product</h3>
           <div className="bg-[#B88E2F] flex justify-between items-center text-white font-bold rounded cursor-pointer p-2 transition-all duration-300 hover:bg-[#a0781d]">
             Choose a product
-            <img src="src/assets/Vector63.png"/>
+            <img src="/Furnio---The-Furniture-Expert/assets/Vector63.png"/>
           </div>
       </div>
     </div>

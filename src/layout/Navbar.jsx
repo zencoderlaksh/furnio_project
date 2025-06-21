@@ -85,7 +85,7 @@ function BasicExample() {
         <div className="d-flex align-items-center justify-content-between w-100">
           <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
             <img
-              src="src/assets/Logo.png"
+              src="/Furnio---The-Furniture-Expert/assets/Logo.png"
               alt="Logo"
               style={{ height: "32px", width: "auto" }}
             />
@@ -94,26 +94,32 @@ function BasicExample() {
         </div>
 
         <Navbar.Collapse id="basic-navbar-nav" className="mt-3 mt-lg-0">
-          <div className="d-flex flex-column flex-lg-row align-items-center w-100">
-            <div className="d-none d-lg-flex justify-content-start flex-grow-1" />
+          {/* This div will arrange its children: nav links on left/top, icons/auth on right/bottom */}
+          <div className="d-flex flex-column flex-lg-row align-items-center w-100 justify-content-lg-center">
 
-            <div className="position-absolute start-50 translate-middle-x d-none d-lg-flex">
-              <Nav className="flex-row text-center gap-4">
-                {["Home", "Shop", "Blog", "Contact"].map((item) => (
-                  <Nav.Link
-                    key={item}
-                    as={Link}
-                    to={`/${item === "Home" ? "" : item}`}
-                    className="text-dark fw-semibold nav-hover"
-                  >
-                    {item}
-                  </Nav.Link>
-                ))}
-              </Nav>
-            </div>
+            {/* Navigation Links */}
+            {/* On mobile (flex-column), these will be full width. On desktop (flex-lg-row), they will be in the center. */}
+            <Nav className="flex-column flex-lg-row text-center gap-lg-4 my-3 my-lg-0 order-2 order-lg-1"> {/* Nav links column on mobile, row on desktop. Order changes for visual flow. */}
+              {["Home", "Shop", "Blog", "Contact"].map((item) => (
+                <Nav.Link
+                  key={item}
+                  as={Link}
+                  to={`/${item === "Home" ? "" : item}`}
+                  className="text-dark fw-semibold nav-hover py-2 py-lg-0" // Added padding for mobile
+                >
+                  {item}
+                </Nav.Link>
+              ))}
+            </Nav>
 
-            <div className="d-flex flex-column flex-lg-row align-items-center justify-content-end flex-grow-1 order-3 gap-3 position-relative">
-              <div className="d-flex gap-3 align-items-center">
+            {/* Spacer for Desktop - Pushes icons/auth to the right. Hidden on mobile. */}
+            <div className="d-none d-lg-flex flex-grow-1 order-lg-2"></div>
+
+            {/* Icons and Auth Buttons */}
+            {/* This group remains largely the same but will be an item in the main flex container. */}
+            {/* order-1 order-lg-3 makes icons appear above nav links on mobile, and to the right on desktop */}
+            <div className="d-flex flex-column flex-lg-row align-items-center justify-content-lg-end gap-3 position-relative order-1 order-lg-3">
+              <div className="d-flex gap-3 align-items-center"> {/* Icons group */}
                 {/* 👤 Profile */}
                 <Link to="/profile" className="text-dark nav-icon-hover">
                   <Person2OutlinedIcon fontSize="medium" />
@@ -168,11 +174,11 @@ function BasicExample() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2 }}
-                        className="position-absolute end-0 mt-2 px-8 py-8 bg-light border rounded shadow-sm"
-                        style={{ width: "370px", zIndex: 999 }}
+                        className="position-absolute end-0 mt-2 px-4 py-3 bg-light border rounded shadow-sm" // Adjusted padding
+                        style={{ width: "calc(100vw - 2rem)", maxWidth: "370px", zIndex: 999 }} // Responsive width
                       >
-                        <h3 className="d-block mb-1">Your Wishlist</h3>
-                        <hr />
+                        <h5 className="d-block mb-2">Your Wishlist</h5> {/* Adjusted heading size */}
+                        <hr className="my-2"/> {/* Adjusted margin */}
                         {wishlistItems.length > 0 ? (
                           <>
                             <ul className="list-unstyled mb-2">
@@ -186,14 +192,14 @@ function BasicExample() {
                                     src={item.image}
                                     alt={item.name}
                                     style={{
-                                      width: "50px",
-                                      height: "50px",
+                                      width: "40px", // Slightly smaller image for mobile
+                                      height: "40px",
                                       objectFit: "cover",
                                       borderRadius: "8px",
                                     }}
                                   />
                                   <div className="flex-grow-1">
-                                    <p className="mb-0 fw-semibold">
+                                    <p className="mb-0 fw-semibold small"> {/* Smaller text */}
                                       {item.name}
                                     </p>
                                     <small className="text-muted">
@@ -203,8 +209,8 @@ function BasicExample() {
                                 </li>
                               ))}
                             </ul>
-                            <hr />
-                            <div className="flex gap-4">
+                            <hr className="my-2"/> {/* Adjusted margin */}
+                            <div className="d-flex justify-content-around"> {/* Changed to justify-content-around */}
                               <Link
                                 to="/wishlist"
                                 className="btn btn-sm btn-dark"
@@ -242,11 +248,11 @@ function BasicExample() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2 }}
-                        className="position-absolute end-0 mt-2 px-8 py-8 bg-light border rounded shadow-sm"
-                        style={{ width: "370px", zIndex: 999 }}
+                        className="position-absolute end-0 mt-2 px-4 py-3 bg-light border rounded shadow-sm" // Adjusted padding
+                        style={{ width: "calc(100vw - 2rem)", maxWidth: "370px", zIndex: 999 }} // Responsive width
                       >
-                        <h3 className="d-block mb-1">Shopping Cart </h3>
-                        <hr />
+                        <h5 className="d-block mb-2">Shopping Cart</h5> {/* Adjusted heading size */}
+                        <hr className="my-2"/> {/* Adjusted margin */}
                         {cartItems.length > 0 ? (
                           <>
                             <ul className="list-unstyled mb-2">
@@ -260,14 +266,14 @@ function BasicExample() {
                                     src={item.image}
                                     alt={item.name}
                                     style={{
-                                      width: "50px",
-                                      height: "50px",
+                                      width: "40px", // Smaller image
+                                      height: "40px",
                                       objectFit: "cover",
                                       borderRadius: "8px",
                                     }}
                                   />
                                   <div className="flex-grow-1">
-                                    <p className="mb-0 fw-semibold">
+                                    <p className="mb-0 fw-semibold small"> {/* Smaller text */}
                                       {item.name}
                                     </p>
                                     <small className="text-muted">
@@ -277,12 +283,12 @@ function BasicExample() {
                                 </li>
                               ))}
                             </ul>
-                            <div className="flex gap-4 mt-8">
-                              <p>Subtotal</p>
-                              <p className="text-[#B88E2F]">Rs. 520,000.00</p>
+                            <div className="d-flex justify-content-between mt-2"> {/* justify-content-between */}
+                              <p className="small">Subtotal</p> {/* Smaller text */}
+                              <p className="text-[#B88E2F] small fw-semibold">Rs. 520,000.00</p> {/* Smaller text */}
                             </div>
-                            <hr />
-                            <div className="flex gap-4">
+                            <hr className="my-2"/> {/* Adjusted margin */}
+                            <div className="d-flex justify-content-around flex-wrap gap-2"> {/* justify-content-around and flex-wrap */}
                               <Link to="/cart" className="btn btn-sm btn-dark">
                                 Cart
                               </Link>
@@ -310,7 +316,7 @@ function BasicExample() {
               </div>
 
               {/* Auth Buttons */}
-              <div className="d-flex gap-2">
+              <div className="d-flex gap-2 mt-3 mt-lg-0"> {/* Added margin top for mobile */}
                 <Link to="/login" className="btn btn-outline-dark px-3 py-1">
                   Sign In
                 </Link>

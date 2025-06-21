@@ -13,7 +13,7 @@ function GallerySection() {
       <div className="card-section-wrapper grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-row md:justify-center md:gap-x-6 lg:gap-x-10 gap-y-8">
         {/* Card 1 */}
         <div className="card-one transform transition duration-300 hover:scale-105 w-full sm:w-auto">
-          <img className="h-auto w-full max-w-[300px] mx-auto" src="src/assets/Mask Group.png" alt="Dining" />
+          <img className="h-auto w-full max-w-[300px] mx-auto" src="/Furnio---The-Furniture-Expert/assets/Mask Group.png" alt="Dining" />
           <div className="title flex justify-center mt-3">
             <h4>Dining</h4>
           </div>
@@ -21,7 +21,7 @@ function GallerySection() {
 
         {/* Card 2 */}
         <div className="card-one transform transition duration-300 hover:scale-105 w-full sm:w-auto">
-          <img className="h-auto w-full max-w-[300px] mx-auto" src="src/assets/Image-living room.png" alt="Living" />
+          <img className="h-auto w-full max-w-[300px] mx-auto" src="/Furnio---The-Furniture-Expert/assets/Image-living room.png" alt="Living" />
           <div className="title flex justify-center mt-3">
             <h4>Living</h4>
           </div>
@@ -29,7 +29,7 @@ function GallerySection() {
 
         {/* Card 3 */}
         <div className="card-one transform transition duration-300 hover:scale-105 w-full sm:w-auto">
-          <img className="h-auto w-full max-w-[300px] mx-auto" src="src/assets/image 101.png" alt="Bedroom" />
+          <img className="h-auto w-full max-w-[300px] mx-auto" src="/Furnio---The-Furniture-Expert/assets/image101.png" alt="Bedroom" />
           <div className="title flex justify-center mt-3">
             <h4>Bedroom</h4>
           </div>

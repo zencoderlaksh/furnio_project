@@ -8,7 +8,7 @@ import image4 from "../../../assets/image4.png";
 import image5 from "../../../assets/Image5.png";
 import image6 from "../../../assets/image6.png";
 import image7 from "../../../assets/image7.png";
-import image8 from "../../../assets/image8.png";
+// import image8 from "../../../assets/image8.png"; // Will use public path
 
 function HeroSection() {
   const products = [
@@ -58,7 +58,7 @@ function HeroSection() {
       oldPrice: "Rp 14.000.000",
     },
     {
-      img: image8,
+      img: "/Furnio---The-Furniture-Expert/assets/image8.png", // Use public path
       title: "Potty",
       description: "Minimalist flower pot",
       price: "Rp 500.000",
